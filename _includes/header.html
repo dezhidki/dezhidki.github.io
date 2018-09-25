@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>deni.sh{% if page.title != '' %}: {{ page.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ site.baseurl }}/styles/markdown.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/styles/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+</head>
+
+<body>
+    <div id="header">
+        {% include title.html %}
+
+        <div class="nav">
+            <a href="{{ site.baseurl }}/">index</a>
+            <a href="{{ site.baseurl }}/projects/">projects</a>
+            <a href="{{ site.baseurl }}/about/">about</a>
+        </div>
+    </div>
